@@ -1,0 +1,77 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #f7fbfd;  /* fallback for old browsers */
+   
+    color: rgb(37, 6, 6);
+    font-family: 'IBM Plex Serif', serif;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+h1 { font-size: 4rem; }
+h2 { font-size: 3rem;}
+h3 { font-size: 2rem;}
+h4 { font-size: 1.8rem; }
+p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.contenedor {
+    background: #5fb5e0; 
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: 1000px;
+border: 5px solid lightgrey;
+
+}
+
+
+   .banner{
+    
+ 
+    flex: 0 0 100%;
+    
+    }
+
+    .sidebar{
+       
+        flex: 0 0 30%;
+        background: #b7e0fc; 
+    }
+    @media screen and (max-width:768px) {
+        .sidebar {
+          
+            flex: 0 0 100%; 
+        }
+       
+    }
+
+
+    .contenido{
+    
+    
+     flex: 0 0 70%;
+     background: #f3f6f8; 
+                   }
+
+                   @media screen and (max-width:768px) {
+                    .contenido {
+                        /* Flex aqui*/
+                        flex: 0 0 100%; 
+                    }
+                  
+                }
+
+     .footer{
+        background: #b7e0fc; 
+                   
+                    flex: 0 0 100%;
+                    
+                    }
+
+
